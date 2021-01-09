@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+BSD 2-Clause License
+Copyright (c) 2021, Yamato Yoshinuma and Ryuichi Ueda
+All rights reserved.
+"""
+
 import rospy
 import random
 from std_msgs.msg import Int32
