@@ -1,24 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+BSD 2-Clause License
+Copyright (c) 2021, Yamato Yoshinuma and Ryuichi Ueda
+All rights reserved.
+"""
+
 import rospy
 import random
 from std_msgs.msg import Int32
 
 n = 0
 uns = 0
-nyu = 0
 tri = 0
 a = 0
 b = 0
 c = 0
 h = 0
-kyo = ['頭上','足元','後ろ','階段']
+kyo = ['頭上','足元','後ろ','階段','前方','左斜め後ろ']
 
 def cb(message):
 	global n
 	n = message.data
-
 
 rospy.init_node('twice')
 sub = rospy.Subscriber('count_up', Int32, cb)
@@ -48,10 +52,10 @@ while not rospy.is_shutdown():
 
 	if h == 0:
 		print(f"大吉だ。おめでとう。馬連{a}-{b}を買うといい。")
-			
+
 	elif h == 1:
 		c = random.choice(kyo)
-		print(f"凶だ。逆にツイてるかも。{c}に注意だ。")
+		print(f"凶だ。逆にツイてるかも。{c}に注意しよう。")
 	elif h == 2:
 		print("小吉。自販機の下から500円玉が見つかるかも。探してみては？")
 	elif h == 3:
