@@ -8,13 +8,13 @@ Raspberry Pi 4
 # デモ動画へのリンク
 <https://youtu.be/Flp1p2mdYuQ>
 # 実行までの流れ
-- インストール方法
+- インストール方法  
+ROSを予めインストールしておいてください。
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/Yyoshinuma/mypkg.git
 cd ..
 catkin_make
-source /opt/ros/noetic/setup.bash
 ```
 - 実行方法
 ```
