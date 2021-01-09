@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 BSD 2-Clause License
-Copyright (c) 2020, Yamato Yoshinuma and Ryuichi Ueda
+Copyright (c) 2021, Ryuichi Ueda
 All rights reserved.
 """
 
